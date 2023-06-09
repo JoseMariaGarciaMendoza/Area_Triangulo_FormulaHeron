@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Heron</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Calculadora de la Area por Formula Heron</legend>
+            <label for="lado-1">Ingrese el valor del Lado 1</label>
+            <input type="text" name="lado-1" id="lado-1" placeholder="Ingresa el valor del lado 1" onblur="GetL1()">
+            <label for="lado-2">Ingrese el valor del Lado 2</label>
+            <input type="text" name="lado-2" id="lado-2" placeholder="Ingresa el valor del lado 2" onblur="GetL2()"> 
+            <label for="lado-3">Ingrese el valor del Lado 3</label>
+            <input type="text" name="lado-3" id="lado-3" placeholder="Ingresa el valor del lado 3" onblur="GetL3()"> 
+            <input type="button" onclick="calculator()" value="Calcular">
+            <div id="container-response"></div>
+        </fieldset>
+    </form>
+    <script src="main-index.js"></script>
+</body>
+</html>
